@@ -4,6 +4,7 @@ from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
 
+from django.conf import settings
 
 admin.autodiscover()
 
@@ -11,7 +12,12 @@ admin.autodiscover()
 # You can also change the ``home`` view to add your own functionality
 # to the project's homepage.
 
-urlpatterns = patterns("",
+urlpatterns = patterns('',
+    (r'^static/(?P<path>.*)$',
+     'django.views.static.serve',
+     {'document_root': settings.STATIC_ROOT}),)
+
+urlpatterns += patterns("",
 
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
