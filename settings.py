@@ -368,4 +368,7 @@ else:
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
+COMPRESS_URL = "http://hellomezz.s3.amazonaws.com/"
+COMPRESS_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 
