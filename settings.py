@@ -371,4 +371,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 COMPRESS_URL = "http://hellomezz.s3.amazonaws.com/"
 COMPRESS_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
+#to stop images expiring
+AWS_QUERYSTRING_AUTH = False
+
 

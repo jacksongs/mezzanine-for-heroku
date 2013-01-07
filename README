@@ -1,8 +1,14 @@
 SKELETON MEZZANINE APP FOR HEROKU
 
-Serves static files direct from Heroku - but can't upload media at the moment (working on using S3 now)
+Serves static files direct from Heroku and offers media library on S3.
 
-Once installed, run locally 'heroku run python manage.py createdb' to create tables and superuser
+Once installed, run 'heroku run python manage.py createdb' to create tables and superuser.
+
+You will also need to determine the AWS credentials for heroku as per https://devcenter.heroku.com/articles/s3.
+
+Replace 'hellomezz' in the settings.py file with the name of your own AWS S3 bucket.
+
+I'm a total noob and this took me about 6 hours to get up.
 
 
 Thanks to these great blog posts/sites:
