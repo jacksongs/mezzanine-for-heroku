@@ -1,5 +1,18 @@
 SKELETON MEZZANINE APP FOR HEROKU
 
-Serves static media direct from Heroku (working on using S3 now)
+Serves static files direct from Heroku - but can't upload media at the moment (working on using S3 now)
 
 Once installed, run locally 'heroku run python manage.py createdb' to create tables and superuser
+
+
+Thanks to these great blog posts/sites:
+
+http://mezzanine.jupo.org/docs/overview.html#installation
+https://devcenter.heroku.com/articles/django
+http://appsembler.com/blog/paas-bakeoff-comparing-stackato-openshift-dotcloud-and-heroku-for-django-hosting-and-deployment/
+https://gist.github.com/4046138
+https://docs.djangoproject.com/en/dev/howto/static-files/
+http://www.rosslaird.com/blog/building-a-project-with-mezzanine/
+https://github.com/appsembler/paasbakeoff/tree/heroku
+http://blog.beyondfog.com/7-tips-on-heroku-testing-and-more-for-python-django-from-a-ruby-on-rails-developer/#.UOoN5YleuYU
+
