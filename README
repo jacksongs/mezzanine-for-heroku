@@ -1,0 +1,5 @@
+SKELETON MEZZANINE APP FOR HEROKU
+
+Serves static media direct from Heroku (working on using S3 now)
+
+Once installed, run locally 'heroku run python manage.py createdb' to create tables and superuser
