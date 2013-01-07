@@ -190,6 +190,7 @@ CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 ###added for s3 support
+AWS_STORAGE_BUCKET_NAME = 'hellomezz'
 STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 
 # Absolute path to the directory static files should be collected to.
@@ -363,8 +364,6 @@ else:
     set_dynamic_settings(globals())
 
 ###these are replicated from the local_settings.py file, but also need the heroku aws config line from https://devcenter.heroku.com/articles/s3 to work
-
-AWS_STORAGE_BUCKET_NAME = 'hellomezz'
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
