@@ -374,4 +374,6 @@ COMPRESS_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 #to stop images expiring
 AWS_QUERYSTRING_AUTH = False
 
+#to allow video embedding
+RICHTEXT_FILTER_LEVEL = 2
 
